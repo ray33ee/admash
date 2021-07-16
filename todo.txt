@@ -1,0 +1,7 @@
+ - Sometimes the ad system fails and shows a black screen. We must detect this and work around it (close and reopen the app
+ - Add error handling to the main_loop in each emulator, specifically the big three functions (ok/watch/x) and handle the exceptions
+ - If something catastrophic happens, email the name of the offending thread and a stack trace
+ - Get the number of coins after 'Ok'
+ - Add output to log file
+ - If get_ok, get_watch or get_x fail, save the image with the name of the emulator + get_ + ok/watch/x
+ - Stagger the execution of emulators (but test them so they work when not staggered)
